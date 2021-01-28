@@ -18,7 +18,7 @@ public class Program {
 		while (true) {
 			try {
 				UI.clearScreen();/*Tem a funcao de limpar a tela, so mostra a tela do xadrez atualizada*/
-				UI.printBoard(chessMatch.getPiece());
+				UI.printMatch(chessMatch);
 				System.out.println();
 				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
