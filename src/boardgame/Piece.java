@@ -15,7 +15,7 @@ public abstract class Piece {
 	}
 
 	public abstract boolean [][] possibleMoves();
-	
+	/*huck metod um gancho que faz com a sub classe */
 	public boolean possibleMove(Position position) {
 		return possibleMoves()[position.getRow()][position.getColumn()];
 	}

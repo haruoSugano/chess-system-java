@@ -29,7 +29,7 @@ public class Rook extends ChessPiece {
 			mat[p.getRow()][p.getColumn()] = true;
 			p.setRow(p.getRow() - 1);
 		}
-		if(getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
+		if(getBoard().positionExists(p) && isThereOpponentPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		/*Verificando acima da pecas */
@@ -41,7 +41,7 @@ public class Rook extends ChessPiece {
 			mat[p.getRow()][p.getColumn()] = true;
 			p.setRow(p.getRow() + 1);
 		}
-		if(getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
+		if(getBoard().positionExists(p) && isThereOpponentPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		/*Verificando em baixo da pecas */
@@ -53,7 +53,7 @@ public class Rook extends ChessPiece {
 			mat[p.getRow()][p.getColumn()] = true;
 			p.setColumn(p.getColumn() - 1);
 		}
-		if(getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
+		if(getBoard().positionExists(p) && isThereOpponentPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 				/*Verificando a esqueda da pecas */
@@ -65,7 +65,7 @@ public class Rook extends ChessPiece {
 			mat[p.getRow()][p.getColumn()] = true;
 			p.setColumn(p.getColumn() + 1);
 		}
-		if(getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
+		if(getBoard().positionExists(p) && isThereOpponentPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 				/*Verificando a direita da pecas */
