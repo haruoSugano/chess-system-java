@@ -18,7 +18,7 @@ public class Program {
 		ChessMatch chessMatch = new ChessMatch();
 		List<ChessPiece> captured = new ArrayList<>();/*Lista de pecas capturada*/
 		
-		while (true) {
+		while (!chessMatch.getCheckMate()) {
 			try {
 				UI.clearScreen();/*Tem a funcao de limpar a tela, so mostra a tela do xadrez atualizada*/
 				UI.printMatch(chessMatch, captured);
@@ -47,8 +47,9 @@ public class Program {
 				System.out.println(e.getMessage());
 				sc.nextLine();/*Excessao para que o usuario, retorne a inserir o dados*/
 		}
-
-		}
+}
+		UI.clearScreen();
+		UI.printMatch(chessMatch, captured);
 	}
 
 }
