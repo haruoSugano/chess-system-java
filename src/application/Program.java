@@ -46,7 +46,7 @@ public class Program {
 			catch(InputMismatchException e){
 				System.out.println(e.getMessage());
 				sc.nextLine();/*Excessao para que o usuario, retorne a inserir o dados*/
-			}
+		}
 
 		}
 	}
